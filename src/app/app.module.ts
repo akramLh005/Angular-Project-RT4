@@ -8,6 +8,7 @@ import { CvComponent } from './cvTech/cv/cv.component';
 import { ListCvComponent } from './cvTech/list-cv/list-cv.component';
 import { ItemComponent } from './cvTech/item/item.component';
 import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
+import { FirstTestComponent } from './first-test/first-test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
     CvComponent,
     ListCvComponent,
     ItemComponent,
-    DetailCvComponent
+    DetailCvComponent,
+    FirstTestComponent
   ],
   imports: [
     BrowserModule,
