@@ -18,6 +18,7 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { RainbowDirective } from './directive/rainbow.directive';
 import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.component';
 import { MiniWordComponent } from './components/mini-word/mini-word.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { MiniWordComponent } from './components/mini-word/mini-word.component';
     RainbowDirective,
     TestRainbowComponent,
     MiniWordComponent,
-    TestRainbowComponent
+    TestRainbowComponent,
+    NavbarComponent
 
 
   ],
