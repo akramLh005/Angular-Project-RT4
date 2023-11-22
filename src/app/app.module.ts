@@ -4,20 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
-import { CvComponent } from './cvTech/cv/cv.component';
-import { ListCvComponent } from './cvTech/list-cv/list-cv.component';
-import { ItemComponent } from './cvTech/item/item.component';
-import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { FirstTestComponent } from './first-test/first-test.component';
+import { TwoWayComponent } from './components/two-way/two-way.component';
+import { FilsComponent } from './components/fils/fils.component';
+import { PereComponent } from './components/pere/pere.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CvComponent,
-    ListCvComponent,
-    ItemComponent,
-    DetailCvComponent,
-    FirstTestComponent
+    FirstTestComponent,
+    TwoWayComponent,
+    FilsComponent,
+    PereComponent
   ],
   imports: [
     BrowserModule,

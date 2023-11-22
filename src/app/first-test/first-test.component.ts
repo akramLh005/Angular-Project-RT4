@@ -11,5 +11,8 @@ export class FirstTestComponent {
     this.color=input.value;
     input.value='';
   }
+  resetColor(){
+    this.color='white';
+  }
 
 }

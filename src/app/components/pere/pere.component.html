@@ -1,0 +1,14 @@
+<div class="alert alert-danger">
+<p>pere works!</p>
+<br>
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+<div class="form-control colorblock" [style.background-color]="color">I am a color block of pere </div>
+</div>
+<div class="col-md-6 col-sm-6">
+<input type="text" (change)="color = inputColor.value" class="form-control" #inputColor placeholder="Enter a color"/>
+</div>
+</div>
+<br>
+<app-fils  [filsProperty]="color" (favoriteColorEvent)="processReq($event)"></app-fils>
+</div>

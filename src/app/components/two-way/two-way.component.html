@@ -1,0 +1,122 @@
+<div class="row">
+    <h1>Carte De Visite</h1>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+        <div class="card-container">
+           <div class="card">
+               <div class="front">
+                   <div class="cover">
+                       <img src="assets/images/rotating_card_thumb2.png">
+                   </div>
+                   <div class="user">
+                       <img class="img-circle" [src]="imagepath">
+                   </div>
+                   <div class="content">
+                       <div class="main">
+                           <h3 class="name">{{ firstname }} {{ lastname }}</h3>
+                           <p class="profession">{{ job }}</p>
+                           <p class="text-center">{{ quote }}</p>
+                       </div>
+                       <div class="footer">
+                           <i class="fa fa-mail-forward"></i> Auto Rotation
+                       </div>
+                   </div>
+               </div> <!-- end front panel -->
+               <div class="back">
+                   <div class="header">
+                       <h5 class="motto">{{ quote }}</h5>
+                   </div>
+                   <div class="content">
+                       <div class="main">
+                           <h4 class="text-center">{{ jobDescription }}</h4>
+                           <p class="text-center">{{ jobKeywords }}</p>
+
+                           <div class="stats-container">
+                               <div class="stats">
+                                   <h4>235</h4>
+                                   <p>
+                                       Followers
+                                   </p>
+                               </div>
+                               <div class="stats">
+                                   <h4>114</h4>
+                                   <p>
+                                       Following
+                                   </p>
+                               </div>
+                               <div class="stats">
+                                   <h4>35</h4>
+                                   <p>
+                                       Projects
+                                   </p>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="footer">
+                       <div class="social-links text-center">
+                           <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                           <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                           <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                       </div>
+                   </div>
+               </div> <!-- end back panel -->
+           </div> <!-- end card -->
+       </div> <!-- end card-container -->
+   </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+<div class="col-md-6 col-sm-6">
+    
+        Last name :
+        <input type="text" placeholder="Enter last name" class="form-control" [(ngModel)]="lastname" #inputLastname/>
+        <br>
+        First name :
+        <input type="text" placeholder="Enter first name" class="form-control" [(ngModel)]="firstname" #inputFirstname/>
+        <br>
+        Job :
+        <input type="text" placeholder="Enter job" class="form-control" [(ngModel)]="job" #inputjob />
+        <br>
+        Image : 
+        <input type="text" placeholder="Enter image" class="form-control" [(ngModel)]="image"/>
+        <br>
+        Favorite quote :
+        <input type="text" placeholder="Enter favorite quote" class="form-control" [(ngModel)]="quote"/>
+        <br>
+        Job description : 
+        <input type="text" placeholder="Enter job description" class="form-control" [(ngModel)]="jobDescription"/>
+        <br>
+        Job keywords : 
+        <input type="text" placeholder="Enter job keywords" class="form-control" [(ngModel)]="jobKeywords"/>
+    
+</div>
+</div>
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+
+
+</script>

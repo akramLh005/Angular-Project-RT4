@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CvComponent } from './cv.component';
+import { FilsComponent } from './fils.component';
 
-describe('CvComponent', () => {
-  let component: CvComponent;
-  let fixture: ComponentFixture<CvComponent>;
+describe('FilsComponent', () => {
+  let component: FilsComponent;
+  let fixture: ComponentFixture<FilsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CvComponent]
+      declarations: [FilsComponent]
     });
-    fixture = TestBed.createComponent(CvComponent);
+    fixture = TestBed.createComponent(FilsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

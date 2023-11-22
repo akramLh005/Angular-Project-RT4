@@ -1,6 +1,26 @@
-<div [style.background-color]="color" > Hello i am here </div>
-<input #inputColor (change)="changeColor(inputColor)"
-       type="text"
-       placeholder="enter the color u want"
-       class="form-control"
->
+<div class="container">
+       <h1>Div Color Change</h1>
+<br>
+
+
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="card " >
+       <div class="card-body ">
+         <h5 class="card-title">Type a color in the input to change the Color</h5>
+         <input #inputColor (change)="changeColor(inputColor)"
+              type="text"
+              placeholder="Enter the color "
+              class="form-control">
+              <br><br>
+         <button type='button' class="btn btn-primary" (click)="resetColor()">Reset color</button>
+
+       </div>
+     </div>
+    </div>
+    <div class="col-md-6 col-sm-6">
+     <div [style.background-color]="color" class="div-color"> Change my color </div>
+</div>
+</div>
+<br>
+</div>

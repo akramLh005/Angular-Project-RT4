@@ -1,8 +1,23 @@
-div {
-  width: 200px;
-  height: 200px;
-  margin-left: 400px;
-  border: 2px solid black;
+.div-color {
+  
+  text-align: center;
+  border : 2px solid black;
+
+}
+.container {
+  /*background-image: linear-gradient(to bottom right, #13547A, #80d0c7);*/
+  width : auto;
+  height : auto;
+  
+  
+}
 
 
+
+h1{
+  
+  text-align: center;
+}
+.card-body{
+  padding: 20px;
 }
