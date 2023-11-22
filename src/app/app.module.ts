@@ -8,6 +8,8 @@ import { FirstTestComponent } from './first-test/first-test.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { FilsComponent } from './components/fils/fils.component';
 import { PereComponent } from './components/pere/pere.component';
+import { RainbowDirective } from './directive/rainbow.directive';
+import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PereComponent } from './components/pere/pere.component';
     FirstTestComponent,
     TwoWayComponent,
     FilsComponent,
-    PereComponent
+    PereComponent,
+    RainbowDirective,
+    TestRainbowComponent
   ],
   imports: [
     BrowserModule,
