@@ -8,11 +8,16 @@ import { FirstTestComponent } from './first-test/first-test.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { FilsComponent } from './components/fils/fils.component';
 import { PereComponent } from './components/pere/pere.component';
+
 import { CvComponent } from './components/cvTech/cv/cv.component';
 import { ListeCvComponent } from './components/cvTech/liste-cv/liste-cv.component';
 import { ItemCvComponent } from './components/cvTech/item-cv/item-cv.component';
 import { DetailCvComponent } from './components/cvTech/detail-cv/detail-cv.component';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
+
+import { RainbowDirective } from './directive/rainbow.directive';
+import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,11 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
     ListeCvComponent,
     ItemCvComponent,
     DetailCvComponent,
-    DefaultImagePipe
+    DefaultImagePipe,
+
+    RainbowDirective,
+    TestRainbowComponent
+
   ],
   imports: [
     BrowserModule,
