@@ -10,6 +10,7 @@ import { FilsComponent } from './components/fils/fils.component';
 import { PereComponent } from './components/pere/pere.component';
 import { RainbowDirective } from './directive/rainbow.directive';
 import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.component';
+import { MiniWordComponent } from './components/mini-word/mini-word.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.comp
     FilsComponent,
     PereComponent,
     RainbowDirective,
-    TestRainbowComponent
+    TestRainbowComponent,
+    MiniWordComponent
   ],
   imports: [
     BrowserModule,

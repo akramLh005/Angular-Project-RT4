@@ -1,0 +1,32 @@
+<div>
+  <p [ngStyle]="{
+  'font-size': size,
+  'font-family': police,
+  'color' : color
+  }">
+    Test
+  </p>
+</div>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box d-flex align-items-stretch">
+        <input #colorInput type="color" class="w-100 h-800" (change)="changeColor(colorInput.value)">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box"><input #sizeInput type="number" class="form-control" (change)="changeSize(sizeInput.value)" [defaultValue]="30"></div>
+    </div>
+    <div class="col-md-4">
+      <select #Select class="form-select" (change)="changePolice(Select.value)">
+        <option value="Arial">Arial</option>
+        <option value="fantasy">fantasy</option>
+        <option value="Bahnschrift">Bahnschrift</option>
+      </select>
+    </div>
+  </div>
+</div>
