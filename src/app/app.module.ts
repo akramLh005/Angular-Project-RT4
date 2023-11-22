@@ -32,15 +32,12 @@ import { MiniWordComponent } from './components/mini-word/mini-word.component';
     ItemCvComponent,
     DetailCvComponent,
     DefaultImagePipe,
-
     RainbowDirective,
-<<<<<<< HEAD
     TestRainbowComponent,
-    MiniWordComponent
-=======
+    MiniWordComponent,
     TestRainbowComponent
 
->>>>>>> e92c8f42cfd21a4a014bb452dfe56158e0514a8d
+
   ],
   imports: [
     BrowserModule,
