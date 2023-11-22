@@ -8,6 +8,11 @@ import { FirstTestComponent } from './first-test/first-test.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { FilsComponent } from './components/fils/fils.component';
 import { PereComponent } from './components/pere/pere.component';
+import { CvComponent } from './components/cvTech/cv/cv.component';
+import { ListeCvComponent } from './components/cvTech/liste-cv/liste-cv.component';
+import { ItemCvComponent } from './components/cvTech/item-cv/item-cv.component';
+import { DetailCvComponent } from './components/cvTech/detail-cv/detail-cv.component';
+import { DefaultImagePipe } from './pipes/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { PereComponent } from './components/pere/pere.component';
     FirstTestComponent,
     TwoWayComponent,
     FilsComponent,
-    PereComponent
+    PereComponent,
+    CvComponent,
+    ListeCvComponent,
+    ItemCvComponent,
+    DetailCvComponent,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,
