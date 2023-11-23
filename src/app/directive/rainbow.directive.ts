@@ -22,9 +22,11 @@ export class RainbowDirective {
     'Turquoise'
   ];
   @HostBinding('style.color') color = 'black'
+  @HostBinding('style.borderColor') bordeColor = 'black'
   @HostListener('keypress') changeColor(){
-    const i = Math.floor(Math.random() * (this.color.length -1 ));
+    const i = Math.floor(Math.random() * (this.color.length -1));
     this.color = this.colors[i];
+    this.bordeColor=this.colors[i];
   }
 
 }

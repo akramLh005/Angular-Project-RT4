@@ -20,6 +20,9 @@ import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.comp
 import { MiniWordComponent } from './components/mini-word/mini-word.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { Nf404Component } from './components/nf404/nf404.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     TestRainbowComponent,
     MiniWordComponent,
     TestRainbowComponent,
-    NavbarComponent
+    NavbarComponent,
+    Nf404Component,
+    LandingPageComponent
 
 
   ],
