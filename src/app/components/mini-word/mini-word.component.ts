@@ -9,7 +9,7 @@ export class MiniWordComponent {
   size = '30px';
   police = 'Arial';
   color = 'black';
-
+  fonts = ['Arial','fantasy','Bahnschrift'];
   changeSize(size: any ) {
     this.size = size + 'px';
 

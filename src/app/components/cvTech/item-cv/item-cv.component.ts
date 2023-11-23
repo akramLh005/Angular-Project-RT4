@@ -12,7 +12,6 @@ export class ItemCvComponent {
   constructor(){}
 
   selectPersonne(){
-    console.log('item component',this.personne);
     this.selectedPersonne.emit(this.personne);
   }
 

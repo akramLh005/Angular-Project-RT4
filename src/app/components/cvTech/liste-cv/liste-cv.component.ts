@@ -11,10 +11,7 @@ export class ListeCvComponent {
   @Output() selectedPersonneEvent = new EventEmitter();
 
   selectPersonne(selectedPersonne : any){
-    console.log('list component', selectedPersonne);
     this.selectedPersonneEvent.emit(selectedPersonne);
   }
-
-
 
 }

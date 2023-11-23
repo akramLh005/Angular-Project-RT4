@@ -23,9 +23,8 @@
     </div>
     <div class="col-md-4">
       <select #Select class="form-select" (change)="changePolice(Select.value)">
-        <option value="Arial">Arial</option>
-        <option value="fantasy">fantasy</option>
-        <option value="Bahnschrift">Bahnschrift</option>
+        <option  *ngFor = "let font of fonts"
+          >{{font}}</option>
       </select>
     </div>
   </div>
