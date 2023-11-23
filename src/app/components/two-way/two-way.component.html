@@ -12,7 +12,7 @@
                        <img src="assets/images/rotating_card_thumb2.png">
                    </div>
                    <div class="user">
-                       <img class="img-circle" [src]="imagepath">
+                       <img class="img-circle" [src]="imagepath |defaultImage">
                    </div>
                    <div class="content">
                        <div class="main">
@@ -70,28 +70,29 @@
    </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
 <div class="col-md-6 col-sm-6">
+    <form >
     
         Last name :
-        <input type="text" placeholder="Enter last name" class="form-control" [(ngModel)]="lastname" #inputLastname/>
+        <input type="text" placeholder="Enter last name" class="form-control" [(ngModel)]="lastname" name="lastname" />
         <br>
         First name :
-        <input type="text" placeholder="Enter first name" class="form-control" [(ngModel)]="firstname" #inputFirstname/>
+        <input type="text" placeholder="Enter first name" class="form-control" [(ngModel)]="firstname" name="firstname" />
         <br>
         Job :
-        <input type="text" placeholder="Enter job" class="form-control" [(ngModel)]="job" #inputjob />
+        <input type="text" placeholder="Enter job" class="form-control" [(ngModel)]="job" name="Job" />
         <br>
         Image : 
-        <input type="text" placeholder="Enter image" class="form-control" [(ngModel)]="image"/>
+        <input type="text" placeholder="Enter image" class="form-control" [(ngModel)]="image" name="image"/>
         <br>
         Favorite quote :
-        <input type="text" placeholder="Enter favorite quote" class="form-control" [(ngModel)]="quote"/>
+        <input type="text" placeholder="Enter favorite quote" class="form-control" [(ngModel)]="quote" name="quote"/>
         <br>
         Job description : 
-        <input type="text" placeholder="Enter job description" class="form-control" [(ngModel)]="jobDescription"/>
+        <input type="text" placeholder="Enter job description" class="form-control" [(ngModel)]="jobDescription" name="jobDescription"/>
         <br>
         Job keywords : 
-        <input type="text" placeholder="Enter job keywords" class="form-control" [(ngModel)]="jobKeywords"/>
-    
+        <input type="text" placeholder="Enter job keywords" class="form-control" [(ngModel)]="jobKeywords" name="jobKeywords"/>
+    </form>
 </div>
 </div>
 <script type="text/javascript">
