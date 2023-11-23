@@ -5,13 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DefaultImagePipe implements PipeTransform {
 
-  transform(value: string, ...args: unknown[]): string {
+  transform(value: string): string {
     if (!value.trim()){
       return 'default_profile.jpg';
     }
-    
+
       return value;
-    
+
   }
 
 }

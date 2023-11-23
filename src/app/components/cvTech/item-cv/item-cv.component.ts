@@ -7,7 +7,7 @@ import { Personne } from '../../../model/personne';
   styleUrls: ['./item-cv.component.css']
 })
 export class ItemCvComponent {
-  @Output() selectedPersonne = new EventEmitter();
+  @Output() selectedPersonne = new EventEmitter<Personne>();
   @Input() personne!: Personne;
   constructor(){}
 

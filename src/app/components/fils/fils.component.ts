@@ -6,12 +6,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./fils.component.css']
 })
 export class FilsComponent {
-  
-  @Input()filsProperty : any ;
 
-  myFavoriteColor:any = 'purple';
+  @Input() filsProperty = 'black' ;
 
-  @Output() favoriteColorEvent = new EventEmitter();
+  myFavoriteColor = 'purple';
+
+  @Output() favoriteColorEvent = new EventEmitter<string>();
 
   sendRequestToDad (){
     this.favoriteColorEvent.emit(this.myFavoriteColor);

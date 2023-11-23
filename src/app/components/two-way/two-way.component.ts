@@ -14,6 +14,6 @@ export class TwoWayComponent {
   quote : string = "To be or not to be, this is my awesome motto!";
   jobDescription : string = "I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere";
   jobKeywords : string = "Web design, Adobe Photoshop, HTML5, CSS3, Corel";
-  imagepath = "assets/images/"+ this.image;
+
 
 }
