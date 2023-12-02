@@ -12,7 +12,9 @@
                        <img src="assets/images/rotating_card_thumb2.png">
                    </div>
                    <div class="user">
-                       <img class="img-circle" src="assets/images/{{ image |defaultImage }}">
+
+                       <img class="img-circle" src="assets/images/{{image |defaultImage }}">
+
                    </div>
                    <div class="content">
                        <div class="main">
@@ -71,7 +73,7 @@
 <!--         <div class="col-sm-1"></div> -->
 <div class="col-md-6 col-sm-6">
     <form >
-    
+
         Last name :
         <input type="text" placeholder="Enter last name" class="form-control" [(ngModel)]="lastname" name="lastname" />
         <br>
@@ -81,16 +83,16 @@
         Job :
         <input type="text" placeholder="Enter job" class="form-control" [(ngModel)]="job" name="Job" />
         <br>
-        Image : 
+        Image :
         <input type="text" placeholder="Enter image" class="form-control" [(ngModel)]="image" name="image"/>
         <br>
         Favorite quote :
         <input type="text" placeholder="Enter favorite quote" class="form-control" [(ngModel)]="quote" name="quote"/>
         <br>
-        Job description : 
+        Job description :
         <input type="text" placeholder="Enter job description" class="form-control" [(ngModel)]="jobDescription" name="jobDescription"/>
         <br>
-        Job keywords : 
+        Job keywords :
         <input type="text" placeholder="Enter job keywords" class="form-control" [(ngModel)]="jobKeywords" name="jobKeywords"/>
     </form>
 </div>
