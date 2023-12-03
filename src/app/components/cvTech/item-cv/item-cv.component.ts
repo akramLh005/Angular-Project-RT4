@@ -9,6 +9,8 @@ import { Personne } from '../../../model/personne';
 export class ItemCvComponent {
   @Output() selectedPersonne = new EventEmitter<Personne>();
   @Input() personne!: Personne;
+  
+  @Input()size=50;
   constructor(){}
 
   selectPersonne(){

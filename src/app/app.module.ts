@@ -22,6 +22,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { Nf404Component } from './components/nf404/nf404.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { EmbaucheComponent } from './components/cvTech/embauche/embauche.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
 
 
 @NgModule({
@@ -42,14 +48,18 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     TestRainbowComponent,
     NavbarComponent,
     Nf404Component,
-    LandingPageComponent
+    LandingPageComponent,
+    EmbaucheComponent,
+    InformationCvComponent
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
