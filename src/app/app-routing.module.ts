@@ -11,6 +11,9 @@ import {LandingPageComponent} from "./components/landing-page/landing-page.compo
 import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
 import {AuthFormComponent} from "./components/auth-form/auth-form.component";
 
+import { ImageObservableComponent } from './components/image-observable/image-observable.component';
+
+
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'div-color/:default', component: FirstTestComponent },
@@ -22,6 +25,7 @@ const routes: Routes = [
   { path: 'cv/:id', component: InformationCvComponent },
   { path: 'mini-word', component: MiniWordComponent },
   { path: 'rainbow', component: TestRainbowComponent },
+  { path: 'image-non-stop', component: ImageObservableComponent },
   { path: "**", component:  Nf404Component}
 
 ];

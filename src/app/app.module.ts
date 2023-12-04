@@ -28,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
+import { ImageObservableComponent } from './components/image-observable/image-observable.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AuthFormComponent } from './components/auth-form/auth-form.component';
@@ -54,7 +55,10 @@ import { AuthFormComponent } from './components/auth-form/auth-form.component';
     LandingPageComponent,
     EmbaucheComponent,
     InformationCvComponent,
-    AuthFormComponent
+
+    AuthFormComponent,
+
+    ImageObservableComponent
 
 
   ],
