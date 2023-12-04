@@ -28,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
+import { ImageObservableComponent } from './components/image-observable/image-observable.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { InformationCvComponent } from './components/cvTech/information-cv/infor
     Nf404Component,
     LandingPageComponent,
     EmbaucheComponent,
-    InformationCvComponent
+    InformationCvComponent,
+    ImageObservableComponent
 
 
   ],
