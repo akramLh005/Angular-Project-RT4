@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Personne } from '../../../model/personne';
 import { CvService } from '../service/cv.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-cv',
@@ -12,11 +13,21 @@ export class CvComponent implements OnInit {
   selectedPersonne!: Personne;
 
   constructor(
-    private cvService : CvService 
+    private cvService : CvService,
+    private toaster : ToastrService
   ){}
 
   ngOnInit(): void {
-      this.personnes= this.cvService.getPersonnes();
+     this.cvService.getPersonnes().subscribe(
+       (personnes)=>{
+         this.personnes = personnes;
+       },
+       (error)=>{
+
+         this.toaster.error('Problem : Access failed to API:( ')
+         this.personnes = this.cvService.getFakePersonnes();
+       }
+     );
   }
 
   selectPersonne(personne : any){

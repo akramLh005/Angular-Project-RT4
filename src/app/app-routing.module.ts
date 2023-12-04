@@ -9,10 +9,12 @@ import { TestRainbowComponent } from './directive/test-rainbow/test-rainbow.comp
 import {Nf404Component} from "./components/nf404/nf404.component";
 import {LandingPageComponent} from "./components/landing-page/landing-page.component";
 import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
+import {AuthFormComponent} from "./components/auth-form/auth-form.component";
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'div-color/:default', component: FirstTestComponent },
+  { path: 'auth-form', component: AuthFormComponent },
   { path: 'div-color', redirectTo: 'div-color/lightblue', pathMatch: 'full' },
   { path: 'carte-visite', component: TwoWayComponent },
   { path: 'pere-fils', component: PereComponent },

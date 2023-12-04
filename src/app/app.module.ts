@@ -29,6 +29,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { InformationCvComponent } from './components/cvTech/information-cv/information-cv.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { AuthFormComponent } from './components/auth-form/auth-form.component';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +53,8 @@ import { InformationCvComponent } from './components/cvTech/information-cv/infor
     Nf404Component,
     LandingPageComponent,
     EmbaucheComponent,
-    InformationCvComponent
+    InformationCvComponent,
+    AuthFormComponent
 
 
   ],
@@ -58,8 +62,9 @@ import { InformationCvComponent } from './components/cvTech/information-cv/infor
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule, 
-    ToastrModule.forRoot() 
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
