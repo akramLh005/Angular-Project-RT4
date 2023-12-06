@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Personne } from '../../../model/personne';
 import { EmbaucheService } from '../service/embauche.service';
 import { ToastrService } from 'ngx-toastr';
+import { CvService } from '../service/cv.service';
 
 @Component({
   selector: 'app-detail-cv',
@@ -13,8 +14,14 @@ export class DetailCvComponent {
   @Input()personne!: Personne;
   constructor(
     private embaucheService: EmbaucheService, 
-    private toaster: ToastrService
-   ){}
+    private toaster: ToastrService,
+    private cvService: CvService
+   ){
+    this.cvService.selectPersonne$
+    .subscribe(
+      (personne) => this.personne = personne
+    )
+   }
 
 
    embaucher(){

@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class CvComponent implements OnInit {
   personnes!: Personne[];
-  selectedPersonne!: Personne;
+  //selectedPersonne!: Personne;
 
   constructor(
     private cvService : CvService,
@@ -30,9 +30,9 @@ export class CvComponent implements OnInit {
      );
   }
 
-  selectPersonne(personne : any){
-    this.selectedPersonne = personne;
+  // selectPersonne(personne : any){
+  //   this.selectedPersonne = personne;
 
-  }
+  // }
 
 }

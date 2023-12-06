@@ -1,11 +1,10 @@
 <div class="row">
     <div class="col-md-6 col-sm-3">
-        <app-liste-cv (selectedPersonneEvent)="selectPersonne($event)"
+        <app-liste-cv 
         [personnes]="personnes"></app-liste-cv>
     </div>
     <div class="col-md-6 col-sm-9">
-        <app-detail-cv *ngIf="selectedPersonne"
-        [personne]="selectedPersonne"></app-detail-cv>
+        <app-detail-cv></app-detail-cv>
     </div>
 </div>
 <div class="row">

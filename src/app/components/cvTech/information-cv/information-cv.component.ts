@@ -34,7 +34,7 @@ export class InformationCvComponent implements OnInit{
       next: (ok) => {
         this.router.navigate(["/cv"]);
       },
-      error: (erreur) => {console.log(erreur);
+      error: (erreur) => {this.toaster.error(erreur.message);
       }
     });
   }

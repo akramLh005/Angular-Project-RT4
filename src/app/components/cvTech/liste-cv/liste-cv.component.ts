@@ -8,10 +8,10 @@ import { Personne } from '../../../model/personne';
 })
 export class ListeCvComponent {
   @Input() personnes: Personne[] =[];
-  @Output() selectedPersonneEvent = new EventEmitter();
+  // @Output() selectedPersonneEvent = new EventEmitter();
 
-  selectPersonne(selectedPersonne : any){
-    this.selectedPersonneEvent.emit(selectedPersonne);
-  }
+  // selectPersonne(selectedPersonne : any){
+  //   this.selectedPersonneEvent.emit(selectedPersonne);
+  // }
 
 }
